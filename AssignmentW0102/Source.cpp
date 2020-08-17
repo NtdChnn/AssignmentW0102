@@ -4,9 +4,9 @@ int main()
 {
 	int num1, num2, x = 2, y = 1;
 	printf("Enter frist number : ");
-	scanf("%d", &num1);
+	scanf_s("%d", &num1);
 	printf("Enter second number : ");
-	scanf("%d", &num2);
+	scanf_s("%d", &num2);
 	num1 = abs(num1);
 	num2 = abs(num2);
 	while (x <= num1 && x <= num2)
