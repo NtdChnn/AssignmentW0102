@@ -11,17 +11,13 @@ int main()
 	num2 = abs(num2);
 	while (x <= num1 && x <= num2)
 	{
-		if (num1 % x == 0)
+		if (num1 % x == 0 && num2 % x == 0)
 		{
-			if (num2 % x == 0)
-			{
-				y = y * x;
-				num1 = num1 / x;
-				num2 = num2 / x;
-				x = 2;
-			}
-		}
-		x++;
+			y = y * x;
+			num1 = num1 / x;
+			num2 = num2 / x;
+			x = 2;
+		}		x++;
 	}
 	printf("Greattest common divisor = %d", y);
 	return 0;
